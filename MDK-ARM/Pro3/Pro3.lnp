@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"pro3\startup_stm32g431xx.o"
+"pro3\main.o"
+"pro3\gpio.o"
+"pro3\tim.o"
+"pro3\stm32g4xx_it.o"
+"pro3\stm32g4xx_hal_msp.o"
+"pro3\stm32g4xx_hal_pwr_ex.o"
+"pro3\stm32g4xx_hal_tim.o"
+"pro3\stm32g4xx_hal_tim_ex.o"
+"pro3\stm32g4xx_hal.o"
+"pro3\stm32g4xx_hal_rcc.o"
+"pro3\stm32g4xx_hal_rcc_ex.o"
+"pro3\stm32g4xx_hal_flash.o"
+"pro3\stm32g4xx_hal_flash_ex.o"
+"pro3\stm32g4xx_hal_flash_ramfunc.o"
+"pro3\stm32g4xx_hal_gpio.o"
+"pro3\stm32g4xx_hal_exti.o"
+"pro3\stm32g4xx_hal_dma.o"
+"pro3\stm32g4xx_hal_dma_ex.o"
+"pro3\stm32g4xx_hal_pwr.o"
+"pro3\stm32g4xx_hal_cortex.o"
+"pro3\system_stm32g4xx.o"
+"pro3\led.o"
+--strict --scatter "Pro3\Pro3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Pro3.map" -o Pro3\Pro3.axf
